@@ -1,0 +1,85 @@
+/* ---- click Btn ----- */
+#clickDiscounts {
+	cursor: pointer;
+}
+/* ---- modal start ----- */
+.modal-open {
+	padding-right: 0px !important;
+}
+.modal {
+	z-index: 1050;
+	padding-right: 0px !important;
+	text-align: center;
+}
+.modal-dialog {
+	/* position: relative;
+	width: auto; */
+	margin: 20px;
+	top: 20%;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+.modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #000;
+	outline: none;
+	border: none; 
+}
+.modal-title {
+	color: #060;
+	font-size: 26px;
+}
+.modal-body {
+	color: #000;
+	font-size: 15px;
+}
+.modal-footer {
+	padding: 15px 15px 20px;
+	text-align: center;
+}
+.modal-footer .btn {
+	display: block;
+	margin: 0 auto;
+	padding: 8px 20px 4px;
+	font-size: 18px;
+	line-height: 18px;
+	border-radius: 0;
+	color: #fff;
+	background-color: #0a0;
+	border-color: #0a0;
+	-ms-box-shadow: 0 3px 0 #1b8e3b;
+	-o-box-shadow: 0 3px 0 #1b8e3b;
+	box-shadow: 0 3px 0 #1b8e3b;
+	width: 90px;
+	cursor: pointer;
+}
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 600px;
+		margin: 30px auto;
+	}
+	.modal-content {
+		-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	}
+}

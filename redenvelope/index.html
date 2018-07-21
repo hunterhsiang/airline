@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+  <head>   
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="新春領紅包‧緊來買機票：歡喜過年，領折扣碼紅包買機票，立即享折扣優惠！">
+    <meta name="keywords" content="紅包,折扣碼,優惠機票,新年">
+    <meta property="og:site_name" content="ezTravel易遊網">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="新春領紅包‧緊來買機票 | ezTravel易遊網">
+    <meta property="og:description" content="新春領紅包‧緊來買機票：歡喜過年，領折扣碼紅包買機票，立即享折扣優惠！">
+    <meta property="og:image" content="https://hunterhsiang.github.io/airline/redenvelope/image/banner_tb.png">
+    <meta property="og:url" content="https://hunterhsiang.github.io/airline/redenvelope/index.html">
+    <title>新春領紅包‧緊來買機票 | ezTravel易遊網</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- header footer -->
+    <link href="css/common.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+    <!-- 領折扣碼 -->
+    <link href="css/discounts.css" rel="stylesheet" />
+    <script src="js/discounts.js"></script>
+        <script type="text/javascript">
+    // 解析帶參數網址
+       function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+    //網址代參數直接到往該頁籤
+        
+        var id = getParameterByName('id');
+        $(function ()
+        {
+          if (id == 'hotel'){
+            $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+            $('#myTab a[href="#hotel"]').tab('show');
+            });
+          }
+          if (id=='global'){
+            $(function () {
+            $('#myTab li:eq(2) a').tab('show');
+            $('#myTab a[href="#global"]').tab('show');
+            });
+          }
+          if (id=='Activities'){
+            $(function () {
+            $('#myTab li:eq(3) a').tab('show');
+            $('#myTab a[href="#Activities"]').tab('show');
+            });
+          }
+          else{
+            $('#myTab li:eq(0) a').tab('show');
+          }
+       
+        }); 
+
+        //判斷領紅包的按鈕
+        document.addEventListener('DOMContentLoaded', function() {
+          if (window.navigator.userAgent.match(/EZAPPWEBVIEW/gi)){
+            $('#clickDiscounts').hide();
+            $('#appClickDiscounts').show();
+          }
+        });
+
+    </script>
+   
+    </head>
+
+    <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-image:url(image/body_bg.png); background-size: cover; background-attachment:fixed;background-repeat: no-repeat;background-position: center top; ">
+            <!-- Modal start -->
+            <div class="modal fade" id="activeModal" tabindex="-1" role="dialog" aria-labelledby="activeModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="activeModalLabel"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <a class="btn btn-sure">確定</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal End -->
+
+            <!-- eztravel bar -->
+            <header class="sp-header"></header>
+
+            <!-- 內容 -->
+            <div class="container-fluid">
+                      <div class="row">
+
+                          <!-- banner -->
+                           <div class="container-fluid" >
+                              <header>
+                                <div class="row">
+                                   <div class=titlebanner>
+                                    <img src="image/banner_pc.png" class="img-responsive center-block bannerimg imgpc"><h1 style="display:none;">新春領紅包‧緊來買機票 | ezTravel易遊網</h1>
+                                    <img src="image/banner_tb.png" class="img-responsive center-block bannerimg imgtb">
+                                    <img src="image/banner_mobile.png" class="img-responsive center-block bannerimg imgmobile">
+                                   </div>
+                                </div>
+                            </header>
+                          </div>
+                        <!-- banner END -->
+                      </div><!-- row  END -->
+            <br/>
+           </div><!-- container-fluid  END -->
+
+
+           <!-- 領折扣碼 -->
+           <div class="box2">
+            <div class="container">
+              <div class="col-xs-12">
+                <br/>
+                 <div class="text-center">
+                  <img src="image/botton.gif" class="img-responsive center-block">
+                      <a id="appClickDiscounts" style="display: none;" href="https://api?method=POST&url=api/1/event/discounts/ftk/claim" class="clickBtn btn btn-danger btn-lg btn-circle">✈ 點擊領紅包</a>
+                      <div id="clickDiscounts" class="clickBtn btn btn-danger btn-lg btn-circle" data-toggle="modal" data-target="#activeModal">✈ 點擊領紅包</div>
+                 </div>
+                 <br/>
+                 <br/>
+                 <br/>
+              </div>
+
+
+            </div>
+          </div>
+            
+           <!-- 領折扣碼 END-->           
+           <div class="container">
+
+                      <!-- 標題 -->
+                      <section class="col-sm-12 text-center">
+                               <div class="row">
+                               <!-- 內容 -->
+                                  <div class="col-xs-12" >
+                                      <nav role="tabnews">
+                                            <!-- Nav tabs -->
+                                            <div class="col-xs-12"> 
+                                                <ul class="nav nav-pills nav-justified" role="tablist" id="myTab" style="font-size: 20px; border-radius: 0px; margin-bottom: 25px; margin-left: -5px;">
+                                                      <li class="nav-item active">
+                                                        <a class="nav-link active " data-toggle="tab" href="#japan" role="news">限時優惠機票</a>
+                                                      </li>
+                                                      <li class="nav-item">
+                                                        <a class="nav-link " data-toggle="tab" href="#hotel" role="news">旅遊推薦</a>
+                                                      </li>
+                                                      <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#Activities" role="news">折扣碼使用說明</a>
+                                                      </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Tab panes -->
+                                              <div class="tab-content" >
+
+                                                      <div class="tab-pane active" id="japan" role="tabnews">
+                                                        
+                                                        <!-- 限時優惠機票 -->
+                                                                <div class="clearfix"></div>
+                                                                <br/>
+                                                                <br/>
+
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                      <img src="image/title_limit01.png" class="img-responsive center-block imgtitle" alt="限時優惠機票" title="限時優惠機票">
+                                                                 </div>
+                                                                 <div class="col-xs-12 col-sm-12 col-md-12 ">
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                <div class="row">
+                                                                                  <div class="col-xs-12">
+                                                                                    <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-TYO-20180522-20180527-TAIPEI-TOKYO?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" class="thumbnail" title="東京 │ 7,293元起">
+                                                                                      <img src="image/limited_01.jpg" alt="東京" class="img-responsive center-block">
+                                                                                      <div class="caption text-left">
+                                                                                        <h3 class="limited_txt">東京</h3>
+                                                                                      </div>
+                                                                                      <p class="text-right">
+                                                                                          <span class="productPrice">7,293</span>
+                                                                                          <span class="dollartxt">元起</span>
+                                                                                      </p>
+                                                                                    </a>
+                                                                                  </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                <div class="row">
+                                                                                  <div class="col-xs-12">
+                                                                                    <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-BKK-20180412-20180416?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" class="thumbnail" title="曼谷 │ 5,786元起">
+                                                                                      <img src="image/limited_02.jpg" alt="曼谷" class="img-responsive center-block">
+                                                                                      <div class="caption text-left">
+                                                                                        <h3 class="limited_txt">曼谷</h3>
+                                                                                      </div>
+                                                                                      <p class="text-right">
+                                                                                          <span class="productPrice">5,786</span>
+                                                                                          <span class="dollartxt">元起</span>
+                                                                                      </p>
+                                                                                    </a>
+                                                                                  </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                <div class="row">
+                                                                                  <div class="col-xs-12">
+                                                                                    <a href="https://flight.eztravel.com.tw/mpplatform/round-trip/TPE-MFM-20180409-20180411-TAIPEI-MACAU?k&passenger=100&cabin=A&nonStop=N&mp=&airlineFilters=NX" target="_blank" class="thumbnail" title="澳門航空 澳門 │ 3,360元起">
+                                                                                      <div class="spec99">新春最低價特惠</div>
+                                                                                      <img src="image/limited_03.jpg" alt="澳門" class="img-responsive center-block">
+                                                                                      <div class="caption text-left">
+                                                                                        <img src="https://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_s/nx_s.png" alt="澳門航空" class="img-responsive center-block limited_img">
+                                                                                        <h3 class="limited_txt">  澳門&nbsp;</h3> 
+                                                                                      </div>
+                                                                                      <p class="text-right">
+                                                                                          <span class="productPrice">3,360</span>
+                                                                                          <span class="dollartxt">元起</span>
+                                                                                      </p>
+                                                                                    </a>
+                                                                                  </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                <div class="row">
+                                                                                  <div class="col-xs-12">
+                                                                                    <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-CDG-20180502-20180508-TAIPEI-PARIS?nonStop=Y&passenger=100&cabin=A&airlineFilters=all&designateAirlines%5B0%5D=BR" target="_blank" class="thumbnail" title="長榮航空 巴黎 │ 18,720元起">
+                                                                                      <img src="image/limited_04.jpg" alt="巴黎" class="img-responsive center-block">
+                                                                                      <div class="caption text-left">
+                                                                                        <img src="https://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_s/br_s.png" alt="長榮航空" class="img-responsive center-block limited_img">
+                                                                                        <h3 class="limited_txt">巴黎</h3>
+                                                                                      </div>
+                                                                                      <p class="text-right">
+                                                                                          <span class="productPrice">18,720</span>
+                                                                                          <span class="dollartxt">元起</span>
+                                                                                      </p>
+                                                                                    </a>
+                                                                                  </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                <div class="row">
+                                                                                  <div class="col-xs-12">
+                                                                                    <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-ONT-20180417-20180430-TAIPEI-ONTARIO?nonStop=N&passenger=100&cabin=A&airlineFilters=all&designateAirlines%5B0%5D=CI" target="_blank" class="thumbnail" title="中華航空 安大略 │ 18,100元起">
+                                                                                      <img src="image/limited_05.jpg" alt="安大略" class="img-responsive center-block">
+                                                                                      <div class="caption text-left">
+                                                                                        <img src="https://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_s/ci_s.png" alt="中華航空" class="img-responsive center-block limited_img">
+                                                                                        <h3 class="limited_txt">安大略</h3>
+                                                                                      </div>
+                                                                                      <p class="text-right">
+                                                                                          <span class="productPrice">18,100</span>
+                                                                                          <span class="dollartxt">元起</span>
+                                                                                      </p>
+                                                                                    </a>
+                                                                                  </div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                <div class="row">
+                                                                                  <div class="col-xs-12">
+                                                                                    <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-BNE-20180504-20180514-TAIPEI-BRISBANE?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" class="thumbnail" title="布里斯本 │ 12,954元起">
+                                                                                      <img src="image/limited_06.jpg" alt="布里斯本" class="img-responsive center-block">
+                                                                                      <div class="caption text-left">
+                                                                                        <h3 class="limited_txt">布里斯本</h3>
+                                                                                      </div>
+                                                                                      <p class="text-right">
+                                                                                          <span class="productPrice">12,954</span>
+                                                                                          <span class="dollartxt">元起</span>
+                                                                                      </p>
+                                                                                    </a>
+                                                                                  </div>
+                                                                                </div>
+                                                                        </div>
+                                                                   <!-- </div> -->
+                                                                 </div>
+
+                                                                <div class="clearfix"></div>
+                                                                <br/>
+                                                                <br/>
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                        <div class="alert alert-warning" role="alert">
+                                                                          <h4 style="word-break:normal;"> <small>
+                                                                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+                                                                            </span> 以上價格不包含適用稅費和附加費/手續費。
+                                                                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+                                                                            </span> 價格若有任何變動，恕不另行通知。 
+                                                                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+                                                                            </span> 機位數量有限，且並非所有航班均提供此優惠機位。
+                                                                              </small>
+                                                                          </h4>
+                                                                        </div>
+                                                                 </div>
+
+
+                                                                <div class="clearfix"></div>
+                                                                <br/>
+                                                                <br/>
+                                                                <br/>
+                                                                <br/>
+                                                          <!-- 限時優惠機票  END-->
+
+                                                          <!-- 熱門航點 -->
+                                                              
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                    <div class="modal-header text-center"> 
+                                                                      <h4><strong>熱門航點</strong></h4>
+                                                                    </div>
+                                                                 </div>
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                          <div class="row">
+                                                                          
+                                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                        <div class="bs-callout bs-callout-info">
+                                                                                            <div class="media">
+                                                                                                <div class="page-header hotpoint">
+                                                                                                   <h2 class="blocktitle"><strong>東北亞</strong></h2>
+                                                                                                </div>
+                                                                                                <div class="each_product_02">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                        <div class="bs-callout bs-callout-info">
+                                                                                            <div class="media">
+                                                                                                <div class="page-header hotpoint">
+                                                                                                   <h2 class="blocktitle"><strong>港澳大陸</strong></h2>
+                                                                                                </div>
+                                                                                                <div class="each_product_03">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                        <div class="bs-callout bs-callout-info">
+                                                                                            <div class="media">
+                                                                                                <div class="page-header hotpoint">
+                                                                                                   <h2 class="blocktitle"><strong>東南亞</strong></h2>
+                                                                                                </div>
+                                                                                                <div class="each_product_04">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                        <div class="bs-callout bs-callout-info">
+                                                                                            <div class="media">
+                                                                                                <div class="page-header hotpoint">
+                                                                                                   <h2 class="blocktitle"><strong>美加</strong></h2>
+                                                                                                </div>
+                                                                                                <div class="each_product_05">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                        <div class="bs-callout bs-callout-info">
+                                                                                            <div class="media">
+                                                                                                <div class="page-header hotpoint">
+                                                                                                   <h2 class="blocktitle"><strong>歐洲/其他</strong></h2>
+                                                                                                </div>
+                                                                                                <div class="each_product_06">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                                        <div class="bs-callout bs-callout-info">
+                                                                                            <div class="media">
+                                                                                                <div class="page-header hotpoint">
+                                                                                                   <h2 class="blocktitle"><strong>紐澳</strong></h2>
+                                                                                                </div>
+                                                                                                <div class="each_product_07">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                                            <div class="alert alert-warning" role="alert">
+                                                                                              <h4 style="word-break:normal;"> <small>
+                                                                                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+                                                                                                </span> 以上價格不包含適用稅費和附加費/手續費。
+                                                                                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+                                                                                                </span> 價格若有任何變動，恕不另行通知。 
+                                                                                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">
+                                                                                                </span> 機位數量有限，且並非所有航班均提供此優惠機位。
+                                                                                                  </small>
+                                                                                              </h4>
+                                                                                            </div>
+                                                                                     </div>
+                                                                            </div>
+
+                                                                 </div>
+
+                                                          <!-- 熱門航點  END-->
+
+                                                      </div>
+
+                                                      <div class="tab-pane fade" id="hotel" role="tabnews">
+                                                        <div class="clearfix"></div>
+                                                                 <br>
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 ">
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>1月 大阪環球影城新設施</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_01.jpg" alt="大阪環球影城" class="img-responsive center-block">
+                                                                                 <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：1/19 - 6/24</strong></h4>
+                                                                                    <h4>集結日本引以為傲的娛樂品牌，推出新設施及主題餐廳，包含FINAL FANTASY VR雲霄飛車、名偵探柯南脫逃遊戲及推理秀餐廳、行走式魔物獵人遊樂設施、美少女戰士等。眾多刺激的新設施等你來體驗，期間限定只到6/24喔！<br/><a href="https://www.usj.co.jp/tw/universal-cool-japan2018/" target="_blank">UNIVERSAL COOL JAPAN 2018官方連結</a></h4>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-OSA-20180522-20180527-TAIPEI-OSAKA?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">大阪 5,086 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                       <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 日本櫻花季</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_02.jpg" alt="日本櫻花季" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3月中下旬 - 4月中旬</strong></h4>
+                                                                                    <h4>深受台灣人喜愛的日本賞櫻。春天隨處可見櫻花，不管是漫步在人行道、日式花園、搭乘賞櫻遊船或在櫻花樹下野餐，都令人難忘。</h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/round-trip/TPE-OSA-20180319-20180323?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">大阪 5,100 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 荷蘭賞鬱金香</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_03.jpg" alt="荷蘭賞鬱金香" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3/22 - 5/13</strong></h4>
+                                                                                    <h4>庫肯霍夫公園 Keukenhof，在15世紀時原是位女伯爵的專屬狩獵地。後來花農將這塊地改造為花卉展覽場。每當春天來臨時，花園中超過800種品種的7百萬鬱金香花苞開始綻放，爭奇鬥艷。在這裡你可以漫步在花園中或搭乘小船，甚至騎腳踏車。<br/><a href="https://keukenhof.nl/en/" target="_blank">官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-AMS-20180404-20180418-TAIPEI-AMSTERDAM?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">阿姆斯特丹 7,033 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 墨爾本美食美酒節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_04.jpg" alt="墨爾本美食美酒節" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3/16 - 3/25</strong></h4>
+                                                                                    <h4>自1993年開始的墨爾本年度慶典，從大師級的精緻美食到日常小吃樣樣都有，活動包含室外長桌午餐、品酒會等各式各樣的美食美酒活動。這段期間，幾乎整個城市的餐廳酒吧都有活動可以參加。<br/><a href="http://www.melbournefoodandwine.com.au/" target="_blank">Melbourne Food & Wine Festival 官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-MEL-20180312-20180317-TAIPEI-MELBOURNE?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">墨爾本 8,331 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 紐西蘭熱氣球節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_05.jpg" alt="紐西蘭熱氣球節" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3/21 - 3/25</strong></h4>
+                                                                                    <h4>過去18年來，紐西蘭北島的懷卡托Waikato，每年都會舉辦熱氣球節。熱氣球來自世界各地，有各種可愛有趣的造型，七彩繽紛的顏色。除此之外，現場還會有音樂表演、遊樂設施、美食小攤販。<br/><a href="http://balloonsoverwaikato.co.nz/" target="_blank">Balloons Over Waikato 官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-AKL-20180316-20180323-TAIPEI-AUCKLAND?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">奧克蘭 7,993 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 美國華盛頓櫻花</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_06.jpg" alt="美國華盛頓櫻花" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3月 - 4月初</strong></h4>
+                                                                                    <h4>美國華盛頓特區每年春天的賞櫻活動。這些吉野櫻是日本送美國的禮物，花的顏色白裡透紅，在不同的光線下會有不同的色澤。以華盛頓紀念碑當背景，櫻花延著河岸綻放，臨水映花，這樣的美景每年吸引超過70萬人前來朝聖。<br/><a href="http://www.nationalcherryblossomfestival.org/" target="_blank">National Cherry Blossom Festival官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-WAS-20180323-20180403-TAIPEI-WASHINGTON%20D.C.?nonStop=N&passenger=100&cabin=A&airlineFilters=all&designateAirlines%5B0%5D=CA" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">華盛頓 11,490 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 印度色彩節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_07.jpg" alt="印度色彩節" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3/2</strong></h4>
+                                                                                    <h4>Hlio 印度三大節慶之一，在每年3月月圓之日舉行，是用來迎接春天的慶典。在對方額頭上抹上彩色粉末，表示祝福，更多人直接將七彩的粉末灑到別人身上，這段時間整個城市都變成彩色的。</h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-DEL-20180301-20180311-TAIPEI-NEW%20DELHI?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">德里 8,927 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>3月 韓國賞櫻去</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_08.jpg" alt="韓國櫻花" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：3月下旬 - 4月上旬</strong></h4>
+                                                                                    <h4>韓國最大的賞櫻節慶非鎮海軍港櫻花節莫屬(3/31 - 4/10)。熱門景點包含慶和火車站和余佐川櫻花大道。從釜山前往鎮海，約80分鐘車程。<br/><a href="https://www.changwon.go.kr/depart/contents.do?mId=0301010100" target="_blank">鎮海軍港櫻花節官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/round-trip/TPE-PUS-20180320-20180323?passenger=100&cabin=A&nonStop=Y" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">釜山 5,004 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>4月 日本琉球海炎祭</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_09.jpg" alt="琉球海炎祭" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：4/14</strong></h4>
+                                                                                    <h4>日本最早的夏日花火節在琉球開跑，只有一天！地點在宜野灣海濱公園，由世界級設計師Koshino Junko設計、花火職人操作，燦爛的煙火將點亮夜空。<br/><a href="http://www.ryukyu-kaiensai.com/archive/2018/spring/" target="_blank">官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-OKA-20180410-20180416-TAIPEI-OKINAWA?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">沖繩 4,990 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>4月 泰國潑水節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_10.jpg" alt="泰國潑水節" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：4/13 - 4/15</strong></h4>
+                                                                                    <h4>潑水節是泰國新年慶典。泰國人相信水是純淨的象徵，因此在過年時藉由互相潑水將不好運帶走，期待新年的到來。記得，潑水也不是亂潑。對長輩通常用葉子沾水輕灑幾滴。奔放的大潑水就留給同輩和晚輩吧。被潑也不要躲，當地人相信會躲掉福氣。</h4>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/round-trip/TPE-BKK-20180409-20180415-TAIPEI-BANGKOK?passenger=100&cabin=A&nonStop=Y" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">曼谷 5,786 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                       <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>4月 日本紫藤花</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_11.jpg" alt="日本紫藤花" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：4月中 - 5月中</strong></h4>
+                                                                                    <h4>日本櫻花季結束後，緊接著就是紫藤花了。僅1個多月的時間，粉、紫、白和黃色的紫藤花像懸吊在空中飛舞的美麗蝴蝶，隨風起舞。走在紫藤花隧道中，十分浪漫，日夜都別有一番風情。</h4>
+                                                                                    <br/>
+                                                                                  </div>
+                                                                              
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-OSA-20180508-20180514-TAIPEI-OSAKA?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">大阪 5,086 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>5月 紐西蘭生蠔節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_12.jpg" alt="紐西蘭生蠔節" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：5/26</strong></h4>
+                                                                                    <h4>位於紐西蘭南島最南端的漁村小鎮布拉夫，每年秋季舉辦生蠔節。這裡的生蠔生長在低溫又純淨的福沃斯海峽，鮮甜可口，吃過的都稱讚！當天除了生蠔外，還有眾多其他海鮮可搭配，是個美食美酒的饗宴。除此之外，還會有大胃王活動和音樂表演。<br/><a href="http://www.bluffoysterfest.co.nz/" target="_blank">Bluff Oyster Festival 官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/round-trip/TPE-CHC-20180521-20180527-TAIPEI-CHRISTCHURCH?passenger=100&cabin=A&nonStop=N" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">基督城 14,052 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>5月 雪梨燈光音樂節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_13.jpg" alt="雪梨燈光音樂節" class="img-responsive center-block">
+                                                                                 <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：5/25 - 6/16</strong></h4>
+                                                                                    <h4>澳洲雪梨的年度盛事，活動由燈光藝術、音樂和各式分享交流會組成。其中，以燈光藝術為主要元素。這段時間，整個城市都是畫布，炫目的燈光藝術投影在建築物上。往年的知名燈光藝術建築有雪梨歌劇院、海港大橋、皇家植物園、達令港等。<br/><a href="https://www.vividsydney.com/" target="_blank">Vivid Sydney 官方連結</a></h4>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-SYD-20180525-20180610-TAIPEI-SYDNEY?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">雪梨 7,993 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                       <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>6月 紐約BBQ慶典</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_14.jpg" alt="紐約BBQ慶典" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：6/9 - 6/10</strong></h4>
+                                                                                    <h4>只有兩天，在美國紐約麥迪遜廣場的BBQ園遊會。現場會有音樂表演、遊戲、試吃及各種BBQ、啤酒、紅酒、甜鹹料理攤位。<br/><a href="http://bigapplebbq.org/" target="_blank">Big Apple Barecue Block Party 官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-NYC-20180606-20180613-TAIPEI-NEW%20YORK?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">紐約 8,816 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>6月 香港龍舟嘉年華</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_15.jpg" alt="香港龍舟嘉年華" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：6/22 - 6/24</strong></h4>
+                                                                                    <h4>來去香港體驗不一樣的端午節！今年的龍舟嘉年華將在香港島中環海濱盛大展開，不要錯過精彩的划龍舟比賽。除此之外，還有啤酒節，夏日來一杯啤酒最消暑了。還有音樂與娛樂節目、裝扮繽紛的行進樂隊和逗趣的雜耍藝人等。<br/><a href="http://www.discoverhongkong.com/tc/see-do/events-festivals/highlight-events/dragon-boat-carnival.jsp?page=1" target="_blank">官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-HKG-20180621-20180625-TAIPEI-HONG%20KONG?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">香港 2,884 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>6月 日本繡球花</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_16.jpg" alt="日本繡球花" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：6 - 7月</strong></h4>
+                                                                                    <h4>6月開始是日本的梅雨季。氣溫高濕氣又重的天氣，並不是每位旅遊人都愛，但日本的繡球花就在這個時間開始綻放。藍色、紫色、粉色的花球，點綴在綠叢上，讓平凡的道路變的很精彩。夏季的繡球花季是日本賞櫻賞楓外，另外一個追花季節。</h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-TYO-20180607-20180613-TAIPEI-TOKYO?nonStop=Y&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">東京 7,293 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>香港迪士尼-夏日主題活動</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_17.jpg" alt="香港迪士尼-夏日主題活動" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：6月 - 8月</strong></h4>
+                                                                                    <h4>今年盛夏暑假，更多迪士尼朋友紛紛齊集樂園，連場派對！來自動畫電影《超能特工隊》的超級英雄家族將駕臨樂園，於明日世界為賓客帶來節奏強勁的互動體驗。快來與超能先生、超能太太及他們的朋友酷冰俠見面！<br/><a href="https://www.hongkongdisneyland.com/zh-hk/" target="_blank">迪士尼官方連結</a></h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-HKG-20180824-20180827-TAIPEI-HONG%20KONG?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">香港 2,884 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                            <div class="row">
+                                                                              <div class="col-xs-12">
+                                                                                  <blockquote>
+                                                                                    <h4><strong>6月 法國薰衣草節</strong></h4>
+                                                                                  </blockquote>
+                                                                                  <img src="image/month_18.jpg" alt="法國薰衣草節" class="img-responsive center-block">
+                                                                                  <div class="text-left viewpointblock">
+                                                                                    <h4><strong>日期：6 - 8月</strong></h4>
+                                                                                    <h4>法國有許多薰衣草之路，但最著名的在南法普羅旺斯，這光是名字就讓人覺得浪漫的地方，每逢夏季會有整片的薰衣草。放眼望去無邊無際的紫，不管是散步或是騎腳踏車，沉浸在紫色花海和薰衣草的香氣中，絕對是令人難忘的美好回憶。薰衣草對溫度變化很敏感，花期不穩定。去年6月中花盛開，收割從6月底開始進行。</h4>
+                                                                                    <br/>
+                                                                                  </div>
+
+                                                                                <a href="https://flight.eztravel.com.tw/mpplatform/flexible/round-trip/TPE-PAR-20180605-20180614-TAIPEI-PARIS?nonStop=N&passenger=100&cabin=A&airlineFilters=all" target="_blank" type="button" class="btn btn-warning btn-lg btn-block">巴黎 8,816 未稅元起</a>
+                                                                                <div class="clearfix"></div>
+                                                                                <br/>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+
+
+                                                               <!-- </div> -->
+                                                            </div>
+                                                            
+                                                            
+                                                            
+
+                                                            <div class="clearfix"></div>
+                                                            <br/>
+                                                            <br/>
+
+                                                      </div>
+                                                      <div class="tab-pane fade" id="Activities" role="tabnews" >
+                                                        <div class="clearfix"></div>
+                                                        <br/>
+                                                        <br/>
+
+                                                            <!-- 活動說明  -->
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                    <!-- <div class="modal-header text-center">  -->
+                                                                      <img src="image/title01.png" class="img-responsive center-block imgtitle" alt="活動說明" title="活動說明">
+                                                                    <!-- </div> -->
+                                                                 </div>
+                                                            
+                                                            
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                        <h3 class="text-center contxt">易遊網會員於活動期間，可於此活動頁上領取新春紅包，持折扣碼購買機票。
+                                                                        </h3>
+
+                                                                        <h3 class="text-center contxt">活動時間：2018/01/26(五) - 2018/02/12(一) 中午12:00</h3>
+                                                                </div>
+                                                            <!-- 活動說明 END  -->
+
+                                                            
+                                                            <div class="clearfix"></div>
+                                                            <br/>
+                                                            <br/>
+
+                                                            <!-- 折扣碼說明  -->
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                    <!-- <div class="modal-header text-center">  -->
+                                                                      <img src="image/title03.png" class="img-responsive center-block imgtitle" alt="折扣碼說明" title="折扣碼說明">
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            
+                                                            
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                        <h3 class="contxt text-left"> <small>
+                                                                          <ol style="line-height: 30px;">
+                                                                            <li>新春紅包之機票折扣碼，可用來購買有位低價引擎的個人機票。適用行程為台灣出發單程、來回機票，不適用不同點進出、多航段行程或廉價航空。
+                                                                            </li>
+                                                                            <li>活動期間，一位會員限領取一次折扣碼。折扣碼僅提供網路成立訂單使用；填寫訂購單時，系統將依據購買之商品顯示可使用的折扣碼，一經成立訂單，無論付款與否皆無法返還。逾期未使用者亦同。易遊網對此恕不負責、亦不補發。</li>
+                                                                            <li>折扣碼的使用期限為2018/02/12 23:59，折扣碼無法轉讓他人或換現金。</li>
+
+                                                                            <li>如要查詢折扣碼明細，可由易遊網會員中心-「折扣查詢」-「折扣碼管理」路徑查詢。</li>
+
+                                                                            <li>折扣碼使用時，會員需自行確認所提供之會員資料均為正確，若因會員資料不全或錯誤，或因任何電腦、網路、行動裝置設定或其他不可預期之問題，本公司恕不負責，亦不補發。</li>
+                                                                            <li>參加者於參加本活動同時，即視為同意接受本活動規範，易遊網有權決定取消、終止、修改或暫停本活動。</li>
+                                                                          </ol>
+                                                                        </small></h3>
+                                                                </div>
+                                                            <!-- 折扣碼說明 END  -->
+
+                                                            <!-- 注意事項  -->
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                    <!-- <div class="modal-header text-center">  -->
+                                                                      <img src="image/title04.png" class="img-responsive center-block imgtitle" alt="注意事項" title="注意事項">
+                                                                    <!-- </div> -->
+                                                                </div>
+                                                            
+                                                            
+                                                                 <div class="col-sm-12" style="padding-bottom: 35px;">
+                                                                        <h3 class="contxt text-left"> <small>
+                                                                          <ol style="line-height: 30px;">
+                                                                            <li>為維護您的消費權益，參加本活動敬請詳閱活動相關注意事項，並應遵守約定事項。如有違反者，易遊網得不經通知立即取消參加本活動資格。</li>
+
+                                                                            <li>活動舉辦期間如有任何問題，請與易遊網客服人員洽詢。</li>
+
+                                                                            <li>本活動若有其他未盡事宜，或有任何變更或修改，則依活動網站公告為主，不再另行通知。易遊網保留取消、終止、修改或暫停本活動之權利，並保有最終釋義權。</li>
+
+                                                                            
+                                                                          </ol>
+                                                                        </small></h3>
+                                                                </div>
+                                                            <!-- 注意事項 END  -->
+
+                                                            <!-- 抽獎活動辦法 END -->
+                                                      </div> 
+                                                
+                                              </div>
+                                      </nav>
+                                  </div>
+
+                               <!-- 內容END -->
+                               </div>
+                      </section>
+           </div>
+
+          
+            <!-- 置頂 -->
+            <div id="gotop" style="margin: 0 !important;  Margin: 0 !important;  padding: 0 !important;"><a href="#header"><img src="image/up-arrow.png" width="50" height="50"></a></div>
+
+            <!-- footer -->
+            <footer class="sp-footer"></footer>
+            <!-------------------商品置入---------------------------->
+            <script src="content/price.js"></script>
+             <!-------------------商品整格連結---------------------------->
+            <script >
+                $(document).ready(function(){
+                $('.trline').click(function(){
+                    /*window.open = $(this).attr('href');*/
+                    window.open($(this).attr('href'));
+                    return false;
+                   });
+                });
+            </script>
+        </body>
+    </html>
+
+
+
+   
