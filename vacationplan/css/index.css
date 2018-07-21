@@ -1,0 +1,500 @@
+*{ font-family:Arial, Helvetica,Microsoft JhengHei; }
+    
+    /* font-family{Gudea,Heiti,\\5FAE\8EDF\6B63\9ED1\9AD4,Microsoft JhengHei;} */
+    a.thumbnail:hover{border-color: #0a0; background: #eee;} 
+    a:hover{text-decoration:none; color:#0a0;}
+    a:focus{text-decoration:none;}
+    .thumbnail:hover{text-decoration:none;}
+    .airpoint:hover{background-color: #337ab7; color:#fff;}
+    .nav-pills>li>a{border-radius: 0px;}
+
+    /* --------------------- MENU---------------------- */
+
+      #nav{}
+
+      #nav ul {
+          margin:0;
+          padding-top:10px;
+          width:667px; 
+          height:72px;
+          margin-left:-8px;
+      }
+
+      #nav li {
+          float:left;
+          list-style:none;
+      }
+
+      #nav li.nav0{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:168px; 
+          height:72px;
+          text-indent:-9999px;
+      }
+
+      #nav li.nav0 a{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:168px; 
+          height:72px;
+          text-indent:-9999px;
+      }
+
+      #nav li.nav1{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:127px; 
+          height:72px;
+          text-indent:-9999px;
+          background-position:-168px;
+      }
+
+      #nav li.nav1 a{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:127px; 
+          height:72px;
+          text-indent:-9999px;
+          background-position:-168px;
+      }
+
+      #nav li.nav2{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:183px; 
+          height:72px;
+          text-indent:-9999px;
+          background-position:-295px;
+      }
+
+      #nav li.nav2 a{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:183px; 
+          height:72px;
+          text-indent:-9999px;
+          background-position:-295px;
+      }
+
+      #nav li.nav3{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:189px; 
+          height:72px;
+          text-indent:-9999px;
+          background-position:-478px;
+      }
+
+      #nav li.nav3 a{
+          display:block;
+          background-image:url(../images/nav.jpg); 
+          width:189px; 
+          height:72px;
+          text-indent:-9999px;
+          background-position:-478px;
+      }
+
+
+      #nav li.nav0 a:hover,#nav li.nav1 a:hover,#nav li.nav2 a:hover,#nav li.nav3 a:hover,#nav li.nav4 a:hover,#nav li.nav5 a:hover,#nav li.nav6 a:hover{ background-image:url(../images/nav_hover.jpg);}
+
+
+    /*------------------------- footer --------------------------*/
+
+    #footer,.footer{
+        clear:both;
+        color:#555;
+        text-align:center;
+        margin:1em auto 0;
+        /*background:url(/images/2008/bg_dn.gif) repeat-x bottom;*/
+        background-color: #fff;
+        padding:27px 0 17px;
+        line-height:1.5em;
+        font-size:12px;
+    }
+    .footer hr{
+        color:#ccc; 
+        height:1px;
+    }
+    #footer a,#footer a:visited,.footer a,.footer a:visited{
+        color:#060;
+        text-decoration:none;
+        font-size:12px;
+    }
+    #footer a:hover,.footer a:hover{text-decoration:none;}
+
+
+    /*------------------------- Back to top button  --------------------------*/
+
+    #gotop {
+        position: fixed;
+        height: 50px;
+        width: 110px;
+        bottom: 100px;
+        margin: 0 0 0 500px;
+        left:83%;
+    }
+
+
+    #back-top {
+      position:fixed;
+      _position: absolute; /* position fixed for IE6 */
+      top:700px;
+      _top: 0px;
+      left: 50%;
+      margin: 0 0 0 500px;
+    }
+    #back-top a {
+        width: 30px;
+        display: block;
+        text-align: center;
+        font: 11px/100% Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ecb20c;
+        /* background color transition */
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+        cursor: pointer;
+    }
+    #back-top a:hover {
+        color: ##F60;
+    }
+    /* arrow icon (span tag) */
+    #back-top span {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 5px;
+        background: #ecb20c  url(../images/up-arrow.png) no-repeat center center;
+        /* rounded corners */
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        /* background color transition */
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+    }
+    #back-top a:hover span {
+        background-color: #F60;
+    }
+    
+
+
+
+    /* banner */
+    .titlebanner{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        /* box-shadow: 0px 1px 3px #666; */
+        
+      }
+      .bannerimg{
+        max-height: 400px;
+
+      }
+
+      /* 不同尺寸banner轉換 */
+      .imgpc{
+        display:inline;
+      }
+      .imgtb{
+        display:none;
+      }
+      .imgmobile{
+        display:none;
+      }
+        @media only screen and (min-width: 1241px){
+          .imgpc{
+          display:inline;
+          }
+          .imgtb{
+            display:none;
+          }
+          .imgmobile{
+            display:none;
+          }
+        }
+        @media only screen and (max-width: 992px){
+          .imgpc{
+          display:none;
+          }
+          .imgtb{
+            display:inline;
+          }
+          .imgmobile{
+            display:none;
+          }
+        }
+        @media only screen and (max-width: 767px){
+          .imgpc{
+          display:none;
+          }
+          .imgtb{
+            display:none;
+          }
+          .imgmobile{
+            display:inline;
+          }
+        }
+        /* END */
+
+        .bannerbg{
+            height: 400px;
+            background: #fff url(../image/banner_pc.png) top center fixed no-repeat;
+            /* -moz-background-size: cover;
+            background-size: cover; */
+        }
+        @media only screen and (max-width: 767px){
+            .bannerbg{
+                height: 400px;
+                background: #fff url(../image/banner_mobile.png) top center fixed no-repeat;
+            }
+
+        }
+
+
+        .bannerbg1{
+            height: 300px;
+            background: #fff url(../image/banner_pc1.png) top center fixed no-repeat;
+            /* -moz-background-size: cover;
+            background-size: cover; */
+        }
+        @media only screen and (max-width: 767px){
+            .bannerbg1{
+                background: #fff url(../image/banner_mobile1.png) top center fixed no-repeat;
+            }
+
+        }
+
+        .bannerbg2{
+            height: 300px;
+            background: #fff url(../image/banner_pc2.png) top center fixed no-repeat;
+            /* -moz-background-size: cover;
+            background-size: cover; */
+        }
+        @media only screen and (max-width: 767px){
+            .bannerbg2{
+                background: #fff url(../image/banner_mobile2.png) top center fixed no-repeat;
+            }
+
+        }
+
+
+        .bannerbg3{
+            height: 300px;
+            background: #fff url(../image/banner_pc3.png) top center fixed no-repeat;
+            /* -moz-background-size: cover;
+            background-size: cover; */
+        }
+        @media only screen and (max-width: 767px){
+            .bannerbg3{
+                background: #fff url(../image/banner_mobile3.png) top center fixed no-repeat;
+            }
+
+        }
+
+       
+        /* h4 {text-decoration:none;} */
+
+
+
+
+
+
+
+
+
+        /* ========   ============= */
+
+
+        /*  NEWS左右箭頭位置、顏色 */
+                    .carousel-control{
+                        width: 1%;
+                    } 
+
+                    .newsglyphicon{
+                        color: #000;
+                    }
+                    .creditglyphicon{
+                        color: #000;
+                    }
+
+
+                    /* 去除 NEWS左右箭頭的背景 */
+                   .carousel-control.left, .carousel-control.right {
+                        background-image: none
+                    }
+                    .left{
+                        margin-left: -20px;
+                    }
+                    .right{
+                        margin-right: -20px;
+                    }
+                   .specimg{
+                        padding: 0px;
+
+                   }
+                   .spec1{
+                        margin-top: 5px;
+                        padding: 5px;
+                        height: 150px;
+                   }
+
+                    @media only screen and (max-width: 767px){
+                       .spec2{
+                        margin-top: 20px;
+
+                       }
+                   }
+
+                   .spec3{
+                        margin-top: -18px;
+                        padding: 15px;
+                   }
+
+                   @media only screen and (max-width: 768px){
+                        .spec3{
+                             margin-top: -20px;
+                             padding: 20px;
+                           }
+                   }
+
+
+
+
+                   .spec4{
+                        margin-top: 0px;
+                    }
+
+                    @media only screen and (max-width: 767px){
+                       .spec4{
+                            margin-top: -10px;
+                            padding: 10px;
+                       }
+                   }
+
+                    .navbar-inverse{
+                        background-color: #428bca;
+                        border: #fff;
+                    }
+                    .navbar-text{
+                        color: #fff !important;
+                        font-size: 15px;
+                    }
+
+
+                    .navbar-inverse .navbar-form{
+                        border-color: #428bca;
+                    }
+
+
+                    @media only screen and (max-width: 767px){
+                       .newsimg ,.creditimg{
+                        display: none;
+                       }
+                   }
+                   
+                   .newscontext{
+                    padding: 0px;
+                    height: 260px;
+                   }
+
+                   @media only screen and (max-width: 767px){
+                        .newscontext{
+                        height: 440px;
+                       }
+                   }
+
+                   /* NEWS 信用卡的高 */
+                   .newslist ,.creditlist{
+                    height: 225px;
+                   }
+
+                   @media only screen and (max-width: 767px){
+                        .newslist ,.creditlist{
+                        height: 76px;
+                       }
+                   }
+                   
+                   .table>thead>tr>th ,.table>tbody>tr>td {
+                        text-align: center;
+                        vertical-align: middle;
+                   }
+
+                   .sale_color{
+                        font-size: 16px;
+                        color: #FF6600;
+                        text-align: center;
+                        text-decoration: none;
+                        line-height: 25px;
+                   }
+                   .btnlink{
+                    text-align: center;
+                   }
+
+                   .productPrice{
+                        color: #ff6600;
+                        font-size: 24px;
+                        
+                        
+                   }
+                   .productPrice:hover{
+                        /* color: #ff6600; */
+                        text-decoration:none;
+                   }
+
+                   .spectxt{
+                     color: #000;
+                   }
+
+                   .productname:hover ,.dollartxt:hover{
+                        color: #000;
+                   }
+                   .productname ,.dollartxt{
+                        color: #000;
+
+                   }
+                   .proticket{
+                        /* border: 1px solid #ddd; */
+                        padding: 15px 0px;
+                   }
+                   .vacation{
+                    color: red;
+                   }
+                   .vacationday{
+                    background-color: #f2dede;
+                   }
+                   .leave{
+                    background-color: #fff;
+                    /* border-radius: 50%; */
+                   }
+                   .annotationtxt{
+                    color: #337ab7;
+                    /* padding: 0px; */
+                   }
+
+
+                   .carousel-indicators li ,.carousel-indicators .active{
+                    width: 20px;
+                    height: 12px;
+                    /* padding:  0px 10px; */
+                    margin: 0px 10px -60px 10px;
+                   }
+                   .carousel-indicators li{
+                    border: 1px solid #0a0;
+                   }
+                   .carousel-indicators .active{
+                    background-color: #0a0;
+                   }
+
+
+                   .vacationtable{
+                    color: #000;
+                    margin-right: auto;
+                    margin-left: auto;
+
+                   }
