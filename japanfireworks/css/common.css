@@ -1,0 +1,125 @@
+/* ================ header ================
+簡易有連結 >> spHeader */
+header,
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+header .container,
+footer .container {
+    width: 100%;
+    padding: 0 12px;
+}
+header .container .logo{
+    width: 100px;
+    height: 20px;
+    margin-top: 8px;
+    background: url("../image/tb-ez-logo.png") no-repeat;
+    background-size: 100px 20px;
+    display: inline-block;
+}
+footer .container {
+    padding: 0;
+}
+/*
+@media only screen and (min-width: 560px) {
+    header,
+    footer {
+        min-width: 760px;
+    }
+    header .container,
+    footer .container{
+        min-width: 760px;
+    }
+}*/
+@media only screen and (min-width: 992px) {
+    header .container,
+    footer .container {
+        width: 960px;
+        max-width: 960px;
+    }
+    header .container .logo {
+        width: 190px;
+        height: 25px;
+        margin-top: 12px;
+        background: url("../image/pc-ez-logo.png") no-repeat;
+        background-size: 190px 25px;
+    }
+}
+
+.sp-header {
+    height: 40px;
+    line-height: 40px;
+    background-image: -webkit-linear-gradient(top, #7edd31 0%, #69c81d 100%);
+    background-image: -o-linear-gradient(top, #7edd31 0%, #69c81d 100%);
+    background-image: linear-gradient(to bottom, #7edd31 0%, #69c81d 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7edd31', endColorstr='#69c81d', GradientType=0);
+}
+.sp-header .container .logo {
+    display: inline-block;
+}
+/* .sp-header TB 版 & 無 MB 版 */
+.sp-header {
+    text-align: center;
+}
+@media only screen and (min-width: 560px) {
+    .sp-header{
+        text-align: left;
+    }
+    .sp-header .container{
+        padding: 0 12px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .sp-header{
+        text-align: left;
+        height: 54px;
+        line-height: 54px;
+    }
+}
+/* ================ footer ================
+簡易版 >> spFooter
+簡易版無分享 >> spBasicFooter */
+.sp-footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #fafafa;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    border-top: #7ed321 solid 1px;
+}
+.sp-footer .icon-copy {
+    font-family: Arial;
+    margin-right: 2px;
+}
+.sp-footer .container .social{
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .sp-footer {
+        font-size: 13px;
+        font-family: "Gudea";
+        text-align: left;
+    }
+    .sp-footer .container .info{
+        float: left;
+    }
+    .sp-footer .container .social{
+        display: block;
+        line-height: 30px;
+        float: right;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .sp-footer .container .social li{
+        float: left;
+        margin-right: 7px;
+    }
+    .sp-footer .container .social li#gpls{
+        padding-top: 10px;
+    }
+}
