@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+  <head>   
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="canonical" href="http://www.eztravel.com.tw/airticket/event/maysale/index.html"/>
+    <meta name="description" content="易遊網獨家！七大廉價航空，三週驚喜促銷，熱門航點超值優惠，再抽千元好禮，不猶豫直接下單，這次瀟灑玩一回">
+    <meta name="keywords" content="廉價航空,酷航,日韓機票,酷鳥航空">
+    <meta property="og:site_name" content="ezTravel易遊網">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="年中大促 飛玩不可 飛日韓 單程最高省100元 | ezTravel易遊網">
+    <meta property="og:description" content="易遊網獨家！七大廉價航空，三週驚喜促銷，熱門航點超值優惠，再抽千元好禮，不猶豫直接下單，這次瀟灑玩一回">
+    <meta property="og:image" content="https://hunterhsiang.github.io/airline/maysale/image/banner_tb.png">
+    <meta property="og:url" content="https://hunterhsiang.github.io/airline/maysale/index.html">
+    <title>年中大促 飛玩不可 飛日韓 單程最高省100元 | ezTravel易遊網</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/action.css">
+    <!-- header footer -->
+    <link href="css/common.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+  
+    <style>
+      
+      .modal-header {
+        padding: 15px 25px;
+        /*border-bottom: 0px solid #e5e5e5;*/
+        /* color: #c00d23; */
+        /* color: #fff; */
+      }
+      .otherthumbnail{
+        display: block;
+        padding: 0px 15px 0px 2px;;
+        margin: 5px 0px;
+        line-height: 1.8;
+        background-color: rgba(255,255,255,0.7);
+        border: 0px solid #ddd;
+        border-radius: 8px;
+        -webkit-transition: background .5s ease-in-out;
+        -o-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
+      }
+      .otherthumbnail:hover{
+        color: #3C2531;
+        background-color: rgba(250,250,250,1);
+        -webkit-transition: background .5s ease-in-out;
+        -o-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
+      }
+      .thumbnail {
+        display: block;
+        padding: 10px 5px 10px 5px;
+        /* margin: 35px 0px; */
+        line-height: 2.42857143;
+        background-color: rgba(255,255,255,0.8);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      .thumbnail:hover{
+        background-color: rgba(255,255,255,1);
+      }
+      .label{
+        padding: 5px 15px 3px 15px;
+        /* font-size: 60%; */
+      }
+
+      .backspace{
+        margin: 35px 0px;
+      }
+      @media only screen and (max-width: 1025px){
+        .backspace{
+          margin: 10px 0px;
+        }
+      }
+     
+      .producttitle{
+        color: #333;
+        font-weight: 600;
+      }
+      .pointtxt{
+        font-size: 14px;
+        color: #8abf1f;
+        line-height: 18px;
+      }
+
+      .media-heading{
+            margin-top: 10px;
+            color: #000;
+      }
+      .media{
+        margin-bottom: 10px;
+      }
+
+      #banner-park{
+          width: 100%;
+          height: 600px;
+          background: url(image/banner_pc_park.png) no-repeat center bottom;
+          background-size: cover; 
+          position:absolute;
+          z-index: 99;
+      }
+
+      #banner-title{
+          width: 100%;
+          height: 230px;
+          /* background: url(image/title.png) no-repeat center top; */
+          position:absolute;
+          /* top: 10%; */
+          top: 160px;
+          z-index: 999;
+
+      }
+
+      @media only screen and (max-width: 767px){
+        #animationelement,#banner-park{
+          display: none;
+        }
+      }
+
+
+      .psychological{
+        height: 180px;
+      }
+      .blocktitle{
+        color: #006934;
+        margin-left: -15px;
+      }
+      .ticket-title{
+        height: 60px;
+      }
+
+
+      .spaceblock{
+        height: 140px;
+      }
+      @media only screen and (max-width: 767px){
+        .spaceblock{
+          height: 40px;
+        }
+      }
+
+
+      .airlogo {
+          text-align: left;
+          display: inline;
+          padding-right: 5px;
+      }
+
+
+      /* banner */
+      .box1{ 
+          position: static;
+          height: 600px;
+          background-image: url("image/banner_pc2.png");
+          background-size: cover; 
+          background-attachment:scroll;
+          background-repeat: no-repeat;
+          background-position: center bottom;
+       }
+             @media only screen and (max-width: 1023px){
+              .box1{
+                height: 550px;
+                /* background-image: url("../image/banner_tb.png") */
+              }
+            }
+            @media only screen and (max-width: 767px){
+              .box1{
+                /* background-size: auto;  */
+                height: 500px;
+                background-attachment:scroll;
+                background-image: url("image/banner_mobile2.png")
+              }
+            }
+
+      /*關閉按鈕位置*/
+      .modal-footer {
+        text-align: center;
+      }
+    </style>
+    
+    </head>
+
+    <body style="background: #ffed00;">
+
+      
+
+            <!-- eztravel bar -->
+            <header class="sp-header"></header>
+            <!-- 內容 -->
+            <div class="container-fluid">
+                  <div class="row">
+                     <!-- banner -->
+                    <header>
+                          <div class="box box1" >
+                              <h1 style="display: none;">年中大促 飛玩不可 飛日韓 單程最高省100元 | ezTravel易遊網</h1>
+                                    <div class="clearfix"></div>
+                          </div>
+                    </header>
+
+                  <article>
+                        <!-- 活動說明 -->
+                        <section>
+                          <div class="box box2">
+                            <div class="container">
+                                <div class="text-center">
+                                  <div class="col-xs-12 ">
+                                     <div class="row">
+                                      <div class="container">
+                                      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                                        <div class="col-xs-4">
+                                          <a href="index.html"><h4 class="spectxt">首波促銷</h4></a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                          <a id="spectxt" href="#spectxt"><h4 class="spectxt">這一波</h4></a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                          <a href="index_xw.html"><h4 class="spectxt">最終波</h4></a>
+                                        </div>
+                                        <img style="margin-bottom: -20px;" src="image/sale2.png" alt="日韓廉價航空" class="img-responsive center-block">
+                                      </div>
+                                    </div>
+
+                                      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                                        <blockquote>
+                                          <h2 style="line-height: 42px;word-break: break-all;font-weight: bold;color:#3a2e00">5/25-5/31 日韓廉價航空，聯合優惠週，單程通通省100元</h2>
+                                        </blockquote>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                  
+                                  <br/>
+                                </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <!-- 更多限時優惠 -->
+                        <section>
+                          <div class="box box4">
+                            <div class="container">
+                                   <div class="clearfix"></div>
+                                   <br/>
+                                   <br/><br/>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                        <img src="image/japan.png" alt="日本火熱航點" class="img-responsive center-block">
+                                   </div>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                            <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=NRT&departureDate=20181024" target="_blank" class="thumbnail" title="桃園-東京成田 │ 2,210元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/jw_l.png" title="香草航空" class="img-responsive airlogo " alt="香草航空"><strong>桃園-東京成田</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,210</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=KIX&departureDate=20181018" target="_blank" class="thumbnail" title="桃園-大阪 │ 2,684元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>桃園-大阪</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,684</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=OKA&departureDate=20181025" target="_blank" class="thumbnail" title="桃園-沖繩 │ 1,896元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/jw_l.png" title="香草航空" class="img-responsive airlogo " alt="香草航空"><strong>桃園-沖繩</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">1,896</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=HND&departureDate=20181018" target="_blank" class="thumbnail" title="桃園-東京羽田 │ 2,881元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>桃園-東京羽田</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,881</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=KIX&departureDate=20181024" target="_blank" class="thumbnail" title="桃園-大阪 │ 2,191元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/jw_l.png" title="香草航空" class="img-responsive airlogo " alt="香草航空"><strong>桃園-大阪</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,191</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=OKA&departureDate=20181018" target="_blank" class="thumbnail" title="桃園-沖繩 │ 2,782元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>桃園-沖繩</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,782</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=KHH&arrival=NRT&departureDate=20181024" target="_blank" class="thumbnail" title="高雄-東京成田 │ 2,408元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/jw_l.png" title="香草航空" class="img-responsive airlogo " alt="香草航空"><strong>高雄-東京成田</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,408</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=KHH&arrival=KIX&departureDate=20181024" target="_blank" class="thumbnail" title="高雄-大阪 │ 2,684元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>高雄-大阪</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,684</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=KHH&arrival=OKA&departureDate=20181024" target="_blank" class="thumbnail" title="高雄-沖繩 │ 2,586元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>高雄-沖繩</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,586</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=FUK&departureDate=20181014" target="_blank" class="thumbnail" title="桃園-福岡 │ 2,283元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/jw_l.png" title="香草航空" class="img-responsive airlogo " alt="香草航空"><strong>桃園-福岡</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">2,283</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=SDJ&departureDate=20181022" target="_blank" class="thumbnail" title="桃園-仙台 │ 3,764元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>桃園-仙台</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">3,764</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                              <div class="row">
+                                                <div class="col-xs-12">
+                                                  <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=CTS&departureDate=20181024" target="_blank" class="thumbnail" title="桃園-札幌 │ 3,911元起">
+                                                    <div class="japanblock">
+                                                      <div class="text-center">
+                                                        <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/mm_l.png" title="樂桃航空" class="img-responsive airlogo " alt="樂桃航空"><strong>桃園-札幌</strong></h3>
+                                                      </div>
+                                                      <h5>
+                                                        <span class="dollartxt">未稅 </span><span class="productPrice">3,911</span><span class="dollartxt"> 元起</span></h5>
+                                                      </div>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+
+
+                                   </div>
+
+                                   <div class="clearfix"></div>
+                                   <br/>
+                                   <br/><br/>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                      <!-- <div class="modal-header text-center">  -->
+                                        <!-- <h2 class="blocktitle"><strong>更多限時優惠</strong></h2> -->
+                                        <img src="image/korea.png" alt="韓國火熱航點" class="img-responsive center-block">
+                                      <!-- </div> -->
+                                   </div>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                            <div class="row">
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=ICN&departureDate=20180601" target="_blank" class="thumbnail" title="桃園-首爾仁川 │ 2,073元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/7c_l.png" title="濟州航空" class="img-responsive airlogo " alt="濟州航空"><strong>桃園-首爾仁川</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,073</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TSA&arrival=GMP&departureDate=20180619" target="_blank" class="thumbnail" title="松山-首爾金浦 │ 2,536元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/ze_l.png" title="易斯達航空" class="img-responsive airlogo " alt="易斯達航空"><strong>松山-首爾金浦</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,536</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TSA&arrival=GMP&departureDate=20180620" target="_blank" class="thumbnail" title="松山-首爾金浦 │ 3,066元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/tw_l.png" title="德威航空" class="img-responsive airlogo " alt="德威航空"><strong>松山-首爾金浦</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">3,066</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=PUS&departureDate=20180620" target="_blank" class="thumbnail" title="桃園-釜山 │ 2,073元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/7c_l.png" title="濟州航空" class="img-responsive airlogo " alt="濟州航空"><strong>桃園-釜山</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,073</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=ICN&departureDate=20180601" target="_blank" class="thumbnail" title="桃園-首爾仁川 │ 2,262元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/ze_l.png" title="易斯達航空" class="img-responsive airlogo " alt="易斯達航空"><strong>桃園-首爾仁川</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,262</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=RMQ&arrival=ICN&departureDate=20181014" target="_blank" class="thumbnail" title="台中-首爾仁川 │ 2,078元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/tw_l.png" title="德威航空" class="img-responsive airlogo " alt="德威航空"><strong>台中-首爾仁川</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,078</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=KHH&arrival=ICN&departureDate=20180620" target="_blank" class="thumbnail" title="高雄-首爾仁川 │ 2,270元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/7c_l.png" title="濟州航空" class="img-responsive airlogo " alt="濟州航空"><strong>高雄-首爾仁川</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,270</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=TPE&arrival=TAE&departureDate=20180620" target="_blank" class="thumbnail" title="桃園-大邱 │ 2,078元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/tw_l.png" title="德威航空" class="img-responsive airlogo " alt="德威航空"><strong>桃園-大邱</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,078</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                                  <div class="row">
+                                                    <div class="col-xs-12">
+                                                      <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ONE_WAY&departure=KHH&arrival=ICN&departureDate=20180911" target="_blank" class="thumbnail" title="高雄-首爾仁川 │ 2,078元起">
+                                                        <div class="japanblock">
+                                                          <div class="text-center">
+                                                            <h3 class="producttitle"><img src="http://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_l/tw_l.png" title="德威航空" class="img-responsive airlogo " alt="德威航空"><strong>高雄-首爾仁川</strong></h3>
+                                                          </div>
+                                                          <h5>
+                                                            <span class="dollartxt">未稅 </span><span class="productPrice">2,078</span><span class="dollartxt"> 元起</span></h5>
+                                                          </div>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                            </div>
+                                   </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <!-- 注意事項 -->
+                        <section>
+                          <div class="box box5">
+                            <div class="container">
+                              <div class="clearfix"></div>
+                                   <br/>
+                                   <br/><br/>
+                               <div class="col-sm-12" style="padding-bottom: 35px;">
+                                  <!-- <div class="modal-header text-center">  -->
+                                    <!-- <h2 class="blocktitle"><strong>注意事項</strong></h2> -->
+                                    <img src="image/Precautions.png" alt="注意事項" class="img-responsive center-block">
+                                  <!-- </div> -->
+                               </div>
+
+                               <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">
+                                 <h4 style="line-height: 32px; color:#333">
+                                   <ul >
+                                     <li>以上為單程未稅價格，稅金可能因匯率浮動而有所調整；票價可能因機位狀況而即時浮動。</li>
+                                     <li>折扣以易遊網服務費計算，每人每段優惠100元(原價200元)。</li>
+                                     <li>優惠票價連續假期及特殊旺日不適用。此優惠視機票供應量及確認情況而定。</li>
+                                     <li>易遊網保留更改、修改、取消本次促銷及活動的權利，恕不另行通知。
+                                     </li>
+                                     
+                                   </ul>
+                                 </h4>
+                                        
+                               </div>
+                               <div class="col-xs-12 col-sm-10 col-sm-offset-1 spaceblock">
+                                        
+                                      </div>
+
+
+                            </div>
+                          </div>
+                        </section>
+                  </article>
+
+                    <!-- banner END -->
+                  </div><!-- row  END -->
+           </div><!-- container-fluid  END -->
+
+            <!-- 置頂 -->
+            <div id="gotop" style="margin: 0 !important;  Margin: 0 !important;  padding: 0 !important;"><a href="#header"><img src="image/up-arrow.png" width="50" height="50"></a></div>
+            <!-- footer -->
+            <footer class="sp-footer"></footer>
+            <!-- google ge -->
+            
+            <!-------------------商品置入---------------------------->
+            
+            <!-------------------商品整格連結---------------------------->
+            <script >
+            $(document).ready(function(){
+            $('.trline').click(function(){
+                /*window.open = $(this).attr('href');*/
+                window.open($(this).attr('href'));
+                return false;
+               });
+            });
+          </script>
+        </body>
+    </html>
+
+
+
+   

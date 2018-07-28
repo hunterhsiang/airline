@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+  <head>   
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="canonical" href="http://www.eztravel.com.tw/airticket/event/maysale/index.html"/>
+    <meta name="description" content="易遊網獨家！七大廉價航空，三週驚喜促銷，熱門航點超值優惠，再抽千元好禮，不猶豫直接下單，這次瀟灑玩一回">
+    <meta name="keywords" content="廉價航空,酷航,日韓機票,酷鳥航空">
+    <meta property="og:site_name" content="ezTravel易遊網">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="年中大促 飛玩不可 機票最高單程省$600 | ezTravel易遊網">
+    <meta property="og:description" content="易遊網獨家！七大廉價航空，三週驚喜促銷，熱門航點超值優惠，再抽千元好禮，不猶豫直接下單，這次瀟灑玩一回">
+    <meta property="og:image" content="https://hunterhsiang.github.io/airline/maysale/image/banner_tb.png">
+    <meta property="og:url" content="https://hunterhsiang.github.io/airline/maysale/index.html">
+    <title>年中大促 飛玩不可 機票最高單程省$600 | ezTravel易遊網</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/action.css">
+    <!-- header footer -->
+    <link href="css/common.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+    
+    <style>
+      
+      .modal-header {
+        padding: 15px 25px;
+        /*border-bottom: 0px solid #e5e5e5;*/
+        /* color: #c00d23; */
+        /* color: #fff; */
+      }
+      .otherthumbnail{
+        display: block;
+        padding: 0px 15px 0px 2px;;
+        margin: 5px 0px;
+        line-height: 1.8;
+        background-color: rgba(255,255,255,0.7);
+        border: 0px solid #ddd;
+        border-radius: 8px;
+        -webkit-transition: background .5s ease-in-out;
+        -o-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
+      }
+      .otherthumbnail:hover{
+        color: #3C2531;
+        background-color: rgba(250,250,250,1);
+        -webkit-transition: background .5s ease-in-out;
+        -o-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
+      }
+      .thumbnail {
+        display: block;
+        padding: 15px 12px 15px 12px;
+        margin: 35px 0px;
+        line-height: 2.42857143;
+        background-color: rgba(255,255,255,0.8);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      .thumbnail:hover{
+        background-color: rgba(255,255,255,1);
+      }
+      .label{
+        padding: 5px 15px 3px 15px;
+        /* font-size: 60%; */
+      }
+
+      .backspace{
+        margin: 35px 0px;
+      }
+      @media only screen and (max-width: 1025px){
+        .backspace{
+          margin: 10px 0px;
+        }
+      }
+     
+      .producttitle{
+        color: #333;
+        font-weight: 600;
+      }
+      .pointtxt{
+        font-size: 14px;
+        color: #8abf1f;
+        line-height: 18px;
+      }
+
+      .media-heading{
+            margin-top: 10px;
+            color: #000;
+      }
+      .media{
+        margin-bottom: 10px;
+      }
+
+      #banner-park{
+          width: 100%;
+          height: 600px;
+          background: url(image/banner_pc_park.png) no-repeat center bottom;
+          background-size: cover; 
+          position:absolute;
+          z-index: 99;
+      }
+
+      #banner-title{
+          width: 100%;
+          height: 230px;
+          /* background: url(image/title.png) no-repeat center top; */
+          position:absolute;
+          /* top: 10%; */
+          top: 160px;
+          z-index: 999;
+
+      }
+
+      @media only screen and (max-width: 767px){
+        #animationelement,#banner-park{
+          display: none;
+        }
+      }
+
+
+      .psychological{
+        height: 180px;
+      }
+      .blocktitle{
+        color: #006934;
+        margin-left: -15px;
+      }
+      .ticket-title{
+        height: 60px;
+      }
+
+
+      .spaceblock{
+        height: 140px;
+      }
+      @media only screen and (max-width: 767px){
+        .spaceblock{
+          height: 40px;
+        }
+      }
+
+      /*關閉按鈕位置*/
+      .modal-footer {
+        text-align: center;
+      }
+    </style>
+    
+    </head>
+
+    <body style="background: #ffed00;">
+
+      
+
+            <!-- eztravel bar -->
+            <header class="sp-header"></header>
+            <!-- 內容 -->
+            <div class="container-fluid">
+                  <div class="row">
+                     <!-- banner -->
+                    <header>
+                          <div class="box box1" >
+                              <h1 style="display: none;">年中大促 飛玩不可 機票最高單程省$600 | ezTravel易遊網</h1>
+                                    <div class="clearfix"></div>
+                          </div>
+                    </header>
+
+                  <article>
+                        <!-- 活動說明 -->
+                        <section>
+                          <div class="box box2">
+                            <div class="container">
+                                <div class="text-center">
+                                  <div class="col-xs-12 ">
+                                     <div class="row">
+                                      <div class="container">
+                                      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                                        <div class="col-xs-4">
+                                          <a href="index.html"><h4 class="spectxt">首波促銷</h4></a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                          <a href="index_jp.html"><h4 class="spectxt">下一波</h4></a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                          <a id="spectxt" href="#spectxt"><h4 class="spectxt">最終波</h4></a>
+                                        </div>
+                                        <img style="margin-bottom: -20px;" src="image/sale.png" alt="首波促銷 - 酷航" class="img-responsive center-block">
+                                      </div>
+                                    </div>
+
+                                      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                                        <blockquote>
+                                          <h2 style="line-height: 42px;word-break: break-all;font-weight: bold;color:#3a2e00">5/18-5/24 酷航13航點促銷，單程最高省600元，再抽千元好禮</h2>
+                                      </blockquote>
+                                       
+                                      </div>
+                                        <div class="row">
+                                          <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <img src="image/explanation_01.png" alt="好禮抽 │ 活動期間購買酷航指定航點來回機票，就抽酷航精美盥洗包或馬克杯" title="好禮抽 │ 活動期間購買酷航指定航點來回機票，就抽酷航精美盥洗包或馬克杯" class="img-responsive center-block">
+                                          </div>
+                                          <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <img src="image/explanation_02.png" alt="揪團再抽 │ 2人以上同行 再抽酷航千元折扣券" title="揪團再抽 │ 2人以上同行 再抽酷航千元折扣券" class="img-responsive center-block">
+                                          </div>
+                                          <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <img src="image/explanation_03.png" alt="揪團加碼送 │ 4人以上同行 加碼送威秀電影票" title="揪團加碼送 │ 4人以上同行 加碼送威秀電影票" class="img-responsive center-block">
+                                          </div>
+                                        </div>                                      
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                  
+                                  <br/>
+                                </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <!-- 必搶超值優惠 -->
+                        <section>
+                          <div class="box box3">
+                            <div class="container">
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                      <!-- <div class="modal-header text-center">  -->
+                                        <!-- <h2 class="blocktitle"><strong>必搶超值優惠</strong></h2> -->
+                                        <img src="image/product.png" alt="必搶超值優惠" class="img-responsive center-block">
+                                      <!-- </div> -->
+                                   </div>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                            <div class="row">
+                                                      <div class="col-xs-12 col-sm-6 col-md-4">
+                                                            <div class="row">
+                                                              <div class="col-xs-12">
+                                                                <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&&arrival=KIX&departureDate=20180910&returnDate=20180920" target="_blank" class="thumbnail" title="大阪 │ 2,188元起">
+                                                                  <img src="image/tr-01.jpg" alt="大阪" class="img-responsive center-block">
+                                                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                        <div class="text-left">
+                                                                          <h3 class="producttitle"><strong>大阪  </strong><span class="label label-primary">小資首選</span></h3>
+                                                                          <h4><span class="label label-info">即日起－06/26 、 08/22－10/31</span></h4>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                      <div class="text-right">
+                                                                        <h5><span class="dollartxt">單程含稅 </span><span class="productPrice">2,188</span><span class="dollartxt"> 元起</span></h5>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="clearfix"></div>
+                                                                      <div  type="button" class="btn btn-danger btn-lg btn-block" title="大阪 │ 2,188元起" alt="大阪 │ 2,188元起">搶購</div>
+                                                                </a>
+                                                              </div>
+                                                            </div>
+                                                      </div>
+
+                                                      <div class="col-xs-12 col-sm-6 col-md-4">
+                                                            <div class="row">
+                                                              <div class="col-xs-12">
+                                                                <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&arrival=ICN&departureDate=20180601&returnDate=20180606" target="_blank" class="thumbnail" title="首爾 │ 2,388元起">
+                                                                  <img src="image/tr-02.jpg" alt="首爾" class="img-responsive center-block">
+                                                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                        <div class="text-left">
+                                                                          <h3 class="producttitle"><strong>首爾  </strong><span class="label label-primary">787夢幻客機</span></h3>
+                                                                          <h4><span class="label label-info">即日起－06/22 、 08/21－09/20</span></h4>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                      <div class="text-right">
+                                                                        <h5><span class="dollartxt">單程含稅 </span><span class="productPrice">2,388</span><span class="dollartxt"> 元起</span></h5>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="clearfix"></div>
+                                                                      <div  type="button" class="btn btn-danger btn-lg btn-block" title="首爾 │ 2,388元起" alt="首爾 │ 2,388元起">搶購</div>
+                                                                </a>
+                                                              </div>
+                                                            </div>
+                                                      </div>
+
+                                                      <div class="col-xs-12 col-sm-6 col-md-4">
+                                                            <div class="row">
+                                                              <div class="col-xs-12">
+                                                                <a href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=SIN&departureDate=20180910&returnDate=20180922" target="_blank" class="thumbnail" title="新加坡 │ 1,888元起">
+                                                                  <img src="image/tr-03.jpg" alt="新加坡" class="img-responsive center-block">
+                                                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                        <div class="text-left">
+                                                                          <h3 class="producttitle"><strong>新加坡  </strong><span class="label label-primary">最低價</span></h3>
+                                                                          <h4><span class="label label-info">即日起－10/31</span></h4>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                      <div class="text-right">
+                                                                        <h5><span class="dollartxt">單程含稅 </span><span class="productPrice">1,888</span><span class="dollartxt"> 元起</span></h5>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="clearfix"></div>
+                                                                      <div  type="button" class="btn btn-danger btn-lg btn-block" title="新加坡 │ 1,888元起" alt="新加坡 │ 1,888元起">搶購</div>
+                                                                </a>
+                                                              </div>
+                                                            </div>
+                                                      </div>
+                                              </div>
+                                   </div>
+                            </div>
+                          </div>
+                        </section>
+
+
+                        <!-- 更多限時優惠 -->
+                        <section>
+                          <div class="box box4">
+                            <div class="container">
+                                   <div class="clearfix"></div>
+                                   <br/>
+                                   <br/><br/>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                      <!-- <div class="modal-header text-center">  -->
+                                        <!-- <h2 class="blocktitle"><strong>更多限時優惠</strong></h2> -->
+                                        <img src="image/more.png" alt="更多限時優惠" class="img-responsive center-block">
+                                      <!-- </div> -->
+                                   </div>
+                                   <div class="col-sm-12" style="padding-bottom: 35px;">
+                                            <div class="row">
+                                              <h4>
+                                                 <div class="table-responsive">
+                                                    <table class="table table-bordered table-hover">
+                                                      <thead>
+                                                        <tr>
+                                                          <th colspan="4" class="bg-primary">台北出發</th>
+                                                        </tr>
+                                                        <tr class="bg-warning">
+                                                          <th width="20%">不藏私推薦</th><th width="20%">航點</th><th width="35%">旅遊區間</th><th width="25%">優惠價 (單程含稅)
+                                                          </th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=SIN&departureDate=20180910&returnDate=20180917" target="_blank" title="新加坡 │ 2,288 元起">
+                                                          <td>航班最多</td>
+                                                          <td>新加坡</td>
+                                                          <td>即日起－10/31 </td>
+                                                          <td><span class="tableproductPrice">2,288</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=NRT&departureDate=20181028&returnDate=20181031" target="_blank" title="東京 │ 2,388 元起">
+                                                          <td> </td>
+                                                          <td>東京</td>
+                                                          <td>即日起－06/28 、 08/23－10/31</td>
+                                                          <td><span class="tableproductPrice">2,388</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=CTS&departureDate=20180906&returnDate=20180918" target="_blank" title="札幌 │ 2,388 元起">
+                                                          <td> </td>
+                                                          <td>札幌</td>
+                                                          <td>即日起－06/22 、 08/21－09/20</td>
+                                                          <td><span class="tableproductPrice">2,388</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=ICN&departureDate=20180831&returnDate=20180902" target="_blank" title="首爾 │ 2,388 元起">
+                                                          <td>787夢幻客機</td>
+                                                          <td>首爾</td>
+                                                          <td>即日起－06/22 、 08/21－09/20</td>
+                                                          <td><span class="tableproductPrice">2,388</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=LGK&departureDate=20180902&returnDate=20180914" target="_blank" title="蘭卡威 │ 2,888 元起">
+                                                          <td> </td>
+                                                          <td>蘭卡威</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">2,888</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=KCH&departureDate=20180827&returnDate=20180905" target="_blank" title="古晉 │ 2,988 元起">
+                                                          <td> </td>
+                                                          <td>古晉</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">2,988</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=KUA&departureDate=20180904&returnDate=20180907" target="_blank" title="關丹 │ 2,988 元起">
+                                                          <td>廉航獨飛</td>
+                                                          <td>關丹</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">2,988</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=MLE&departureDate=20180913&returnDate=20180919" target="_blank" title="馬爾地夫 │ 3,888 元起">
+                                                          <td>浪漫超值</td>
+                                                          <td>馬爾地夫</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">3,888</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=OOL&departureDate=20180827&returnDate=20180911" target="_blank" title="黃金海岸 │ 4,788 元起">
+                                                          <td>打工度假首選</td>
+                                                          <td>黃金海岸</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">4,788</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=SYD&departureDate=20180824&returnDate=20180903" target="_blank" title="雪梨 │ 5,588 元起">
+                                                          <td> </td>
+                                                          <td>雪梨</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">5,588</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=ATH&departureDate=20181001&returnDate=20181106" target="_blank" title="雅典 │ 7,188 元起">
+                                                          <td>浪漫超值</td>
+                                                          <td>雅典</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">7,188</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=TPE&arrival=TXL&departureDate=20180930&returnDate=20181010" target="_blank" title="柏林 │ 8,088 元起">
+                                                          <td> </td>
+                                                          <td>柏林</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">8,088</span>起</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                               </div>
+                                             </h4>
+                                             <br/>
+                                             <h4>
+                                                 <div class="table-responsive">
+                                                    <table class="table table-bordered table-hover">
+                                                      <thead>
+                                                        <tr>
+                                                          <th colspan="4" class="bg-primary">高雄出發</th>
+                                                        </tr>
+                                                        <tr class="bg-warning">
+                                                          <th width="20%">不藏私推薦</th><th width="20%">航點</th><th width="35%">旅遊區間</th><th width="25%">優惠價 (單程含稅)</th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=SIN&departureDate=20180910&returnDate=20180918" target="_blank" title="新加坡 │ 1,888 元起">
+                                                          <td> </td>
+                                                          <td>新加坡</td>
+                                                          <td>即日起－10/31 </td>
+                                                          <td><span class="tableproductPrice">1,888</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=KIX&departureDate=20181001&returnDate=20181020" target="_blank" title="大阪 │ 2,188 元起">
+                                                          <td>高CP</td>
+                                                          <td>大阪</td>
+                                                          <td>即日起－06/26 、 08/22－10/31</td>
+                                                          <td><span class="tableproductPrice">2,188</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=LGK&departureDate=20180830&returnDate=20180905" target="_blank" title="蘭卡威 │ 2,688 元起">
+                                                          <td>一遊雙城</td>
+                                                          <td>蘭卡威</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">2,688</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=KCH&departureDate=20180830&returnDate=20180910" target="_blank" title="古晉 │ 2,888 元起">
+                                                          <td>一遊雙城</td>
+                                                          <td>古晉</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">2,888</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=KUA&departureDate=20180830&returnDate=20180910" target="_blank" title="關丹 │ 2,888 元起">
+                                                          <td>一遊雙城</td>
+                                                          <td>關丹</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">2,888</span>起</td>
+                                                        </tr>
+                                                        <tr class="trline" href="https://lcc.eztravel.com.tw/lcc/search?tripType=ROUND_TRIP&departure=KHH&arrival=OOL&departureDate=20180910&returnDate=20181003" target="_blank" title="黃金海岸 │ 4,688 元起">
+                                                          <td> </td>
+                                                          <td>黃金海岸</td>
+                                                          <td>即日起－11/13</td>
+                                                          <td><span class="tableproductPrice">4,688</span>起</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                               </div>
+                                             </h4>
+                                              </div>
+                                   </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <!-- 注意事項 -->
+                        <section>
+                          <div class="box box5">
+                            <div class="container">
+                              <div class="clearfix"></div>
+                                   <br/>
+                                   <br/><br/>
+                               <div class="col-sm-12" style="padding-bottom: 35px;">
+                                  <!-- <div class="modal-header text-center">  -->
+                                    <!-- <h2 class="blocktitle"><strong>注意事項</strong></h2> -->
+                                    <img src="image/Precautions.png" alt="注意事項" class="img-responsive center-block">
+                                  <!-- </div> -->
+                               </div>
+
+                               <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">
+                                 <h4 style="line-height: 32px; color:#333">
+                                   <ul >
+                                     <li>以上為單程含稅價格，稅金可能因匯率浮動而有所調整。</li>
+                                     <li>優惠數量有限，優惠票價不一定適用於所有航班和所有日期。</li>
+                                     <li>優惠票價連續假期及特殊旺日不適用。此優惠視機票供應量及確認情況而定。</li>
+                                     <li>抽獎及贈送資格說明：活動期間內購買酷航指定航點來回機票<br/>
+                                      <ol>
+                                        <li>每一筆訂單不限旅客數，抽酷航限量精美盥洗包或馬克杯。</li>
+                                        <li>同一筆訂單二位旅客(含)以上，抽酷航千元折扣券。</li>
+                                        <li>同一筆訂單四位旅客(含)以上，贈威秀影城團體兌換券。<br/>四位旅客送四張兌換券、五位送五張，數量有限，送完為止。</li>
+                                        <li>指定航點為新加坡,東京,大阪,札幌,首爾,黃金海岸,雪梨,雅典,柏林,蘭卡威,古晉,關丹,馬爾地夫。</li>
+                                         <li>以旅客為抽獎單位，機票需完成付款且開票，退票則失去資格。</li>
+                                      </ol>
+                                     </li>
+                                     <li>酷航優惠券不得折抵現金或其他商品。相關使用限制與說明以優惠券上記載為準。</li>
+                                     <li>抽獎獎項及贈送贈品限易遊網門市領取。</li>
+                                     <li>易遊網及酷航保留更改、修改、取消本次促銷及活動的權利，恕不另行通知。</li>
+                                   </ul>
+                                 </h4>
+                                        
+                               </div>
+                               <div class="col-xs-12 col-sm-10 col-sm-offset-1 spaceblock">
+                                        
+                                      </div>
+
+
+                            </div>
+                          </div>
+                        </section>
+                  </article>
+
+                    <!-- banner END -->
+                  </div><!-- row  END -->
+           </div><!-- container-fluid  END -->
+
+            <!-- 置頂 -->
+            <div id="gotop" style="margin: 0 !important;  Margin: 0 !important;  padding: 0 !important;"><a href="#header"><img src="image/up-arrow.png" width="50" height="50"></a></div>
+            <!-- footer -->
+            <footer class="sp-footer"></footer>
+            <!-- google ge -->
+           
+            <!-------------------商品整格連結---------------------------->
+            <script >
+            $(document).ready(function(){
+            $('.trline').click(function(){
+                /*window.open = $(this).attr('href');*/
+                window.open($(this).attr('href'));
+                return false;
+               });
+            });
+          </script>
+        </body>
+    </html>
+
+
+
+   
