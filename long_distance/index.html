@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+  <head>   
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="易遊機票折學，夏季晚鳥限時優惠，搭乘長榮、華航、國泰 7-9 月出發機票享 168 元折扣。">
+    <meta name="keywords" content="機票優惠,暑假,長榮,華航,國泰,歐洲,美加">
+    <meta property="og:site_name" content="ezTravel易遊網">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="易遊機票折學 | ezTravel易遊網">
+    <meta property="og:description" content="易遊機票折學，夏季晚鳥限時優惠，搭乘長榮、華航、國泰 7-9 月出發機票享 168 元折扣。">
+    <meta property="og:image" content="https://hunterhsiang.github.io/airline/long_distance/image/banner_tb.png">
+    <meta property="og:url" content="https://hunterhsiang.github.io/airline/long_distance/index.html">
+    <title>易遊機票折學 | ezTravel易遊網</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- header footer -->
+    <link href="css/common.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+    <!-- APP RWD 連結 -->
+    <script src="https://m.eztravel.com.tw/js/setapplink.js"></script>
+    <!-- 領折扣碼 -->
+    <link href="css/discounts.css" rel="stylesheet" />
+    <script src="js/discounts.js"></script>
+
+
+    <script type="text/javascript">
+    // 解析帶參數網址
+       function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+   
+        //判斷領紅包的按鈕
+        document.addEventListener('DOMContentLoaded', function() {
+          if (window.navigator.userAgent.match(/EZAPPWEBVIEW/gi)){
+            //<div id="clickDiscounts" class="clickBtn btn btn-danger btn-lg btn-circle" data-toggle="modal" data-target="#activeModal">✈ 點擊領紅包</div>
+            //$('#clickDiscounts').on('click', discounts.loginCheckerCallback);
+            $('#clickDiscounts').hide();
+            $('#appClickDiscounts').show();
+          }
+        });
+
+    </script>
+    <style>
+      .box1{ 
+          position: static;
+          height: 600px;
+          background-image: url("image/banner_pc.png");
+          background-size: cover; 
+          background-attachment:scroll;
+          background-repeat: no-repeat;
+          background-position: center bottom;
+       }
+             @media only screen and (max-width: 1023px){
+              .box1{
+                height: 600px;
+                background-image: url("image/banner_tb.png")
+              }
+            }
+            @media only screen and (max-width: 767px){
+              .box1{
+                /* background-size: auto;  */
+                height: 400px;
+                background-attachment:scroll;
+                background-image: url("image/banner_mobile.png")
+              }
+            }
+
+      .box2{
+        background: #F4783B;
+        margin-bottom: 20px;
+      }
+      .box2-1{
+        padding: 45px 10px 45px 45px;
+        color: #fff;
+      }
+      .box2-2{
+        padding: 105px;
+      }
+       @media only screen and (max-width: 769px){
+          .box2-1{
+          padding: 45px;
+         }
+          .box2-2{
+                padding: 25px 0px 55px 0px;
+         }
+      }
+      
+      .box3{
+        padding: 35px 0px;
+        margin-bottom: 20px;
+      }
+      .box4{
+        background-color: #aaa;
+        padding: 45px 0px;
+        background-image: url("image/box4_bg.png");
+        background-size: cover; 
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+
+      .box5{
+        padding: 55px 0px;
+        background-color: #F4783B;
+        color: #fff;
+      }
+      
+
+      /* .thumbnail {
+          display: block;
+          padding: 4px;
+          margin-bottom: 10px;
+          line-height: 1.42857143;
+          background-color: transparent;
+          border: 0px solid #ddd;
+          border-radius: 0px;
+          -webkit-transition: border .2s ease-in-out;
+          -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+      } */
+      .thumbnail{
+        border: 5px solid #ccc;
+        background: rgba(255, 255, 255,0.6);
+      }
+
+      a.thumbnail:hover {
+        /*border-color: #41bbc5;*/
+        border-color: #F4783B;
+        /* background: rgba(242, 209, 70,0.4); */
+        background: rgba(255,255,255,1);
+        transition: background .4s ease-in-out;
+      }
+
+      
+      hr {
+        /* margin-top: 20px; */
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 3px solid #ddd;
+      }
+      .tab-content{
+        margin-top: 15px;
+        padding-top: 20px;
+        border-top: 3px solid #aaa;
+      }
+      .caption ul{
+        list-style-image: url(image/tick.png);
+      }
+      /* .ciblock{
+        margin-top: -25px;
+      }
+       @media only screen and (max-width: 769px){
+            .ciblock{
+              margin-top: 0px;
+            }
+       } */
+       .nav h3{
+        margin-bottom: 15px;
+        margin-left: -15px;
+       }
+
+
+    </style>
+
+
+  
+    </head>
+
+    <body style=" background-image:url(image/body_bg.png); background-size: cover; background-attachment:fixed;background-repeat: no-repeat;background-position: center top; ">
+            <!-- Modal start -->
+            <div class="modal fade" id="activeModal" tabindex="-1" role="dialog" aria-labelledby="activeModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="activeModalLabel"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <a class="btn btn-sure">確定</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal End -->
+
+            <!-- eztravel bar -->
+            <header class="sp-header"></header>
+
+            <!-- 內容 -->
+            <div class="container-fluid box1">
+                      <div class="row">
+                          <!-- banner -->
+                           <div class="container-fluid" >
+                              <header>
+                                <div class="row">
+                                    <h1 style="display:none;">易遊機票折學 | ezTravel易遊網</h1>
+                                </div>
+                            </header>
+                          </div>
+                        <!-- banner END -->
+                      </div><!-- row  END -->
+            <br/>
+           </div><!-- container-fluid  END -->
+
+
+           <!-- 領折扣碼 -->
+           <div class="box2">
+            <div class="container">
+              <div class="col-xs-12 col-md-7 box2-1">
+                 <div class="text-left">
+                  <h1><strong>易遊機票折學 領取辦法</strong></h1>
+                  <hr>
+                  <h4 style="line-height: 28px;">折扣 168 限定暑假 7-9 月出發、限定購買長榮、華航、國泰的歐美加機票。折扣碼需於 08/25 23:59 前折抵完成</h4>
+                 </div>
+
+              </div>
+              <div class="col-xs-12 col-md-5 box2-2">
+                <div class="text-center">
+                      <a id="appClickDiscounts" style="display: none;" href="https://api?method=POST&url=api%2F1%2Fevent%2Fdiscounts%2Fftk%2Fclaim" class="clickBtn btn btn-success btn-lg btn-circle">✈ 點擊領折扣碼</a>
+                      <div id="clickDiscounts" class="clickBtn btn btn-success btn-lg btn-circle" data-toggle="modal" data-target="#activeModal"><strong>✈ 點擊領折扣碼</strong></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="box3">
+            <div class="container">
+              <div class="row">
+                 <div class="col-xs-12 text-center">
+                   <h2><strong>機票折學撇步</strong></h2>
+                   <br/>
+                   <br/>
+                   <br/>
+                 </div>
+                 <div class="col-xs-12">
+                     <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
+                          <img src="https://www.eztravel.com.tw/airticket/fit/image/br.jpg" alt="中華航空">
+                          <div class="caption">
+                            <h3 class="text-center"><strong>長榮航空</strong></h3>
+                            <hr>
+                            <h4 style="line-height: 28px;">
+                              <ul>
+                                <li>直飛多倫多、芝加哥、休士頓</li>
+                                <li>巴黎直飛不中停</li>
+                                <li>長程航班中停曼谷不加價</li>
+                              </ul>
+                            </h4>
+                          </div>
+                        </div> 
+                     </div>
+
+                     <div class="col-xs-12 col-md-4 ciblock">
+                        <div class="thumbnail">
+                          <img src="https://www.eztravel.com.tw/airticket/fit/image/ci.jpg" alt="中華航空">
+                          <div class="caption">
+                            <h3 class="text-center"><strong>中華航空</strong></h3>
+                            <hr>
+                            <h4 style="line-height: 28px;">
+                              <ul>
+                                <li>直飛歐洲6航點</li>
+                                <li>空巴A350飛歐洲</li>                                
+                                <li>新航線加州安大略</li>
+                              </ul>
+                            </h4>
+                          </div>
+                        </div> 
+                     </div>
+                     
+                     <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
+                          <img src="https://www.eztravel.com.tw/airticket/fit/image/cx.jpg" alt="中華航空">
+                          <div class="caption">
+                            <h3 class="text-center"><strong>國泰航空</strong></h3>
+                            <hr>
+                            <h4 style="line-height: 28px;">
+                              <ul>
+                                <li>一票玩兩國</li>
+                                <li>長程含蓋航點最多</li>
+                                <li>Skytrax十大航空之一</li>
+                              </ul>
+                            </h4>
+                          </div>
+                        </div> 
+                     </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box4">
+            <div class="container">
+              <div class="row">
+                   <div class="col-xs-12 text-center">
+                       <h2><strong>機票歐美加熱門航點</strong></h2>
+                       <br/>
+                       <br/>
+                   </div>
+                   <div class="clearfix"></div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-pills nav-justified" role="tablist" style="margin-left: -8px;">
+                    <li role="presentation"><a href="#airlineBR" aria-controls="airlineBR" role="tab" data-toggle="tab"><h3><img src="https://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_m/br_m.png" alt="長榮航空">  長榮航空</h3></a></li>
+                    <li role="presentation"  class="active"><a href="#airlineCI" aria-controls="airlineCI" role="tab" data-toggle="tab"><h3><img src="https://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_m/ci_m.png" alt="中華航空">  中華航空</h3></a></li>
+                    <li role="presentation"><a href="#airlineCX" aria-controls="airlineCX" role="tab" data-toggle="tab"><h3><img src="https://flight.eztravel.com.tw/mpplatform/assets/images/air_icon/air_m/cx_m.png" alt="國泰航空">  國泰航空</h3></a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="airlineBR">
+                      <div class="col-xs-12">
+                        <blockquote>
+                          美加
+                        </blockquote>
+                        <div class="each_product_02"></div>
+                        <div class="clearfix"></div>
+                        <blockquote>
+                          歐洲
+                        </blockquote>
+                        <div class="each_product_03"></div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane  active" id="airlineCI">
+                      <div class="col-xs-12">
+                        <blockquote>
+                          美加
+                        </blockquote>
+                        <div class="each_product_04"></div>
+                        <div class="clearfix"></div>
+                        <blockquote>
+                          歐洲
+                        </blockquote>
+                        <div class="each_product_05"></div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="airlineCX">
+                      <div class="col-xs-12">
+                        <blockquote>
+                          美加
+                        </blockquote>
+                        <div class="each_product_06"></div>
+                        <div class="clearfix"></div>
+                        <blockquote>
+                          歐洲
+                        </blockquote>
+                        <div class="each_product_07"></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box5">
+            <div class="container">
+              <div class="row">
+                 <div class="col-sm-12 text-center">
+                   <h2><strong>機票折扣碼注意事項</strong></h2>
+                   <hr>
+                   <br/>
+                 </div>
+                 <div class="col-sm-12">
+                     <div class="col-sm-12 col-md-8 col-md-offset-2">
+                      <h4 style="line-height: 32px;">
+                        <ul>
+                          <li>即日起 - 2018/08/20 可領取折扣碼優惠，折扣碼需於 2018/08/25 前使用完畢。</li>
+                          <li>折扣碼金額 168 元，可折抵長榮、華航、國泰飛美國、加拿大、歐洲 7-9 月出發機票。</li>
+                          <li>適用有位低價引擎機票，且行程為台灣出發單程、來回機票，不適用不同點進出、多航段行程或廉價航空。</li>
+                          <li>每筆訂單僅能折抵一次，無法重覆使用。</li>
+                        </ul>
+                      </h4>
+                     </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+            
+           <!-- 領折扣碼 END-->           
+            <!-- 置頂 -->
+            <div id="gotop"><a href="#header"><img src="image/up-arrow.png" width="50" height="50"></a></div>
+
+            <!-- footer -->
+            <footer class="sp-footer"></footer>
+            
+            <!-- google ge -->
+            <script type="text/javascript" src="/js/analytics/new-track_code.js"></script>
+
+            <!-------------------商品置入---------------------------->
+            <script src="content/price.js"></script>
+
+             <!-------------------商品整格連結---------------------------->
+            <script >
+                $(document).ready(function(){
+                $('.trline').click(function(){
+                    /*window.open = $(this).attr('href');*/
+                    window.open($(this).attr('href'));
+                    return false;
+                   });
+                });
+            </script>
+            
+        </body>
+    </html>
+
+
+
+   
